@@ -1,0 +1,69 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": ["eslint:recommended", "airbnb", "prettier"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly",
+    "React": "writable"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "paths": ["src/"],
+        "moduleDirectory": ["node_modules", "pages/", "components/"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      },
+      "typescript": {}
+    },
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/ignore": ["node_modules"]
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "prettier"],
+  "rules": {
+    "jsx-a11y/anchor-is-valid": "off",
+    "prettier/prettier": "error",
+    "max-len": ["error", 120, { "ignoreUrls": true, "ignoreStrings": true, "ignoreTemplateLiterals": true }],
+    "quotes": ["error", "double", { "avoidEscape": true }],
+    "semi": ["error", "never", { "beforeStatementContinuationChars": "always" }],
+    "import/order": [
+      "error",
+      { "newlines-between": "ignore", "groups": ["builtin", "external", "internal", "parent", "sibling", "index"] }
+    ],
+    "import/extensions": "off",
+    "import/no-unresolved": [2, { "caseSensitive": false }],
+    "react/jsx-filename-extension": ["error", { "extensions": [".jsx", ".tsx"] }],
+    "no-unused-vars": ["error", { "ignoreRestSiblings": true, "argsIgnorePattern": "^_" }],
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-props-no-spreading": ["off"]
+  },
+  "overrides": [
+    {
+      "files": ["**/*.ts*"],
+      "parser": "@typescript-eslint/parser",
+      "rules": {
+        "react/prop-types": "off",
+        "no-unused-vars": "off",
+        "no-dupe-class-members": "off",
+        "lines-between-class-members": "off",
+        "camelcase": "off"
+      }
+    }
+  ]
+}
