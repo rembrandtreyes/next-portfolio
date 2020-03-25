@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next -p 3009",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint ./src --ext js,jsx,ts,tsx"
   },
   "dependencies": {
     "@fortawesome/fontawesome-pro": "^5.13.0",

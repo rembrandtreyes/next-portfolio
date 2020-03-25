@@ -9,9 +9,3 @@ const colors = {
 }
 
 export default colors
-
-
-#DFE5EA
-#00335A
-#70767B
-#00060B
