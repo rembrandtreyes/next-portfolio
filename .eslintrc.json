@@ -37,7 +37,6 @@
   },
   "plugins": ["react", "prettier"],
   "rules": {
-    "jsx-a11y/anchor-is-valid": "off",
     "prettier/prettier": "error",
     "max-len": ["error", 120, { "ignoreUrls": true, "ignoreStrings": true, "ignoreTemplateLiterals": true }],
     "quotes": ["error", "double", { "avoidEscape": true }],
@@ -48,8 +47,10 @@
     ],
     "import/extensions": "off",
     "import/no-unresolved": [2, { "caseSensitive": false }],
-    "react/jsx-filename-extension": ["error", { "extensions": [".jsx", ".tsx"] }],
+    "jsx-a11y/anchor-is-valid": "off",
     "no-unused-vars": ["error", { "ignoreRestSiblings": true, "argsIgnorePattern": "^_" }],
+    "react/jsx-filename-extension": ["error", { "extensions": [".jsx", ".tsx"] }],
+    "react/jsx-one-expression-per-line": ["off"],
     "react/react-in-jsx-scope": "off",
     "react/jsx-props-no-spreading": ["off"]
   },
