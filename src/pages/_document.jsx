@@ -10,7 +10,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link href="./test" rel="stylesheet" />
+          <link href="/public/favicon.png" rel="stylesheet" />
         </Head>
         <body>
           <Main />

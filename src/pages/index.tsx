@@ -1,10 +1,20 @@
-import Layout from "components/Layout"
+import Head from "next/head"
+import Hero from "Sections/Hero/Hero"
+import About from "Sections/About"
+import Experience from "Sections/Experience"
+import Contact from "Sections/Contact"
 
 const Index = () => (
-  <Layout>
-    <h1 style={{ height: "100vh" }}>HomePage</h1>
-    <div id="about">About</div>
-  </Layout>
+  <>
+    <Head>
+      <title key="index">Rembrandt Reyes | ReactJS Nerd | Rock Climber | Living in sunny San Francisco</title>
+      <meta name="description" content="JavaScript enthusiast creating great things in React!" />
+    </Head>
+    <Hero />
+    <About />
+    <Experience />
+    <Contact />
+  </>
 )
 
 export default Index
