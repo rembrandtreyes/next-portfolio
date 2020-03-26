@@ -1,37 +1,47 @@
+import { useState } from "react"
 import Link from "next/link"
 import styled from "styled-components"
 
-const Header: React.FC = () => (
-  <Navbar>
-    <Container>
-      <LogoWrapper>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/rembrandtreyes">
-          <img
-            src="https://res.cloudinary.com/rreyes/image/upload/v1581378529/Logo_eig6t8.png"
-            alt="Rembrandt's Logo"
-          />
-        </a>
-      </LogoWrapper>
-      <LinkWrapper>
-        <Link href="#about">
-          <StyledLink>About</StyledLink>
-        </Link>
-        <Link href="#experience">
-          <StyledLink>Experience</StyledLink>
-        </Link>
-        {/* <Link href="#work">
+const Header: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false)
+  const toggle = () => setIsOpen(!isOpen)
+  return (
+    <Navbar>
+      <Container>
+        <LogoWrapper>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/rembrandtreyes">
+            <img
+              src="https://res.cloudinary.com/rreyes/image/upload/v1581378529/Logo_eig6t8.png"
+              alt="Rembrandt's Logo"
+            />
+          </a>
+        </LogoWrapper>
+        <LinkWrapper>
+          <Link href="#about">
+            <StyledLink>About</StyledLink>
+          </Link>
+          <Link href="#experience">
+            <StyledLink>Experience</StyledLink>
+          </Link>
+          {/* <Link href="#work">
           <StyledLink>Work</StyledLink>
         </Link> */}
-        <Link href="#contact">
-          <StyledLink>Contact</StyledLink>
-        </Link>
-        {/* <Link href="/resume">
+          <Link href="#contact">
+            <StyledLink>Contact</StyledLink>
+          </Link>
+          {/* <Link href="/resume">
           <ResumeLink>Resume</ResumeLink>
         </Link> */}
-      </LinkWrapper>
-    </Container>
-  </Navbar>
-)
+        </LinkWrapper>
+        <NavMenu onClick={toggle}>
+          <span />
+          <span />
+          <span />
+        </NavMenu>
+      </Container>
+    </Navbar>
+  )
+}
 
 export const Navbar = styled.div`
   position: sticky;
@@ -45,6 +55,19 @@ export const Navbar = styled.div`
   background-color: white;
 
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+`
+
+export const NavMenu = styled.div`
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 32px;
+  height: 32px;
+  span {
+    border: 2px solid #222222;
+    margin-bottom: 4px;
+    border-radius: 2px;
+  }
 `
 
 export const Container = styled.div`
@@ -63,6 +86,10 @@ export const LogoWrapper = styled.div`
 
 export const LinkWrapper = styled.div`
   display: flex;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `
 
 export const StyledLink = styled.a`
@@ -72,6 +99,10 @@ export const StyledLink = styled.a`
   margin: 0 8px;
   cursor: pointer;
   padding: 16px 24px;
+
+  @media screen and (max-width: 768px) {
+    padding: 8px 16px;
+  }
 `
 
 export const ResumeLink = styled.a`
@@ -85,6 +116,10 @@ export const ResumeLink = styled.a`
   border: 2px solid #222;
   border-radius: 4px;
   cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    padding: 8px 16px;
+  }
 `
 
 export default Header
