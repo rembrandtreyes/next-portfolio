@@ -28,6 +28,10 @@ export const SocialNavWrapper = styled.div`
   bottom: 32px;
   left: 32px;
 
+  svg {
+    width: 24px !important;
+  }
+
   a {
     display: flex;
     justify-content: center;
@@ -38,7 +42,7 @@ export const SocialNavWrapper = styled.div`
     font-size: 1.5em;
     margin: 8px 8px;
     border-radius: 50%;
-    transition: all cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    transition: all cubic-bezier(0.4, 0, 0.2, 1) 500ms;
 
     &:hover {
       box-shadow: -2px -2px 5px rgba(255, 255, 255, 1), 2px 2px 5px rgba(0, 0, 0, 0.5),

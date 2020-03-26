@@ -25,9 +25,9 @@ const Header: React.FC = () => (
         <Link href="#contact">
           <StyledLink>Contact</StyledLink>
         </Link>
-        <Link href="/resume">
+        {/* <Link href="/resume">
           <ResumeLink>Resume</ResumeLink>
-        </Link>
+        </Link> */}
       </LinkWrapper>
     </Container>
   </Navbar>
