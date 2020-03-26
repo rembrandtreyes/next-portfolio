@@ -25,7 +25,7 @@ const Header: React.FC = () => (
         <Link href="#contact">
           <StyledLink>Contact</StyledLink>
         </Link>
-        <Link href="/tax 2019.pdf">
+        <Link href="/resume">
           <ResumeLink>Resume</ResumeLink>
         </Link>
       </LinkWrapper>
