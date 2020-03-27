@@ -12,7 +12,7 @@ export const StyledHeadingOne = styled.h1`
   font-size: 5.063em;
   margin: 0;
 
-  @media screen and (max-width: 601px) {
+  @media screen and (max-width: 768px) {
     font-size: 3.375em;
   }
 
@@ -27,7 +27,7 @@ export const StyledHeadingTwo = styled.h2`
   font-family: "Roboto Slab", serif;
   font-weight: 300;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     font-size: 1.5em;
   }
 
@@ -40,7 +40,7 @@ export const HeadingParagraph = styled.p`
   font-size: 1.5em;
   margin: 0;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     font-size: 1.5em;
   }
 
