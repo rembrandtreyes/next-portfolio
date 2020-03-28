@@ -1,15 +1,17 @@
 import { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faTwitter, faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
-import { faUser, faTimes } from "@fortawesome/free-solid-svg-icons"
+import { faUserAstronaut, faTimes } from "@fortawesome/free-solid-svg-icons"
+
+import urls from "config/urls"
 
 import { SocialNavWrapper, SocialLinks, SocialMenu } from "./SocialNavStyles"
 
 const socials = [
-  { name: "GitHub", icon: faGithub, link: "https://github.com/rembrandtreyes" },
-  { name: "LinkedIn", icon: faLinkedinIn, link: "https://www.linkedin.com/in/rembrandtreyes/" },
-  { name: "Twitter", icon: faTwitter, link: "https://twitter.com/rembrandtreyes" },
-  { name: "Instagram", icon: faInstagram, link: "https://www.instagram.com/rembrandtreyes/" },
+  { name: "GitHub", icon: faGithub, link: urls.github },
+  { name: "LinkedIn", icon: faLinkedinIn, link: urls.linkedIn },
+  { name: "Twitter", icon: faTwitter, link: urls.twitter },
+  { name: "Instagram", icon: faInstagram, link: urls.instagram },
 ]
 
 const SocialNav = () => {
@@ -27,7 +29,7 @@ const SocialNav = () => {
         })}
       </SocialNavWrapper>
       <SocialMenu onClick={toggle}>
-        <FontAwesomeIcon icon={isOpen ? faTimes : faUser} />
+        <FontAwesomeIcon icon={isOpen ? faTimes : faUserAstronaut} />
         <span />
         <span />
         <span />

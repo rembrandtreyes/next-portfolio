@@ -50,13 +50,13 @@ export const SocialLinks = styled.a`
     z-index: -10;
 
     &:nth-child(1) {
-      transform: ${({ open }) => open && "translate(0px, -50px)"};
+      transform: ${({ open }) => open && "translate(-20px, -50px)"};
     }
     &:nth-child(2) {
-      transform: ${({ open }) => open && "translate(35px, -45px)"};
+      transform: ${({ open }) => open && "translate(23px, -47px)"};
     }
     &:nth-child(3) {
-      transform: ${({ open }) => open && "translate(50px, -12px)"};
+      transform: ${({ open }) => open && "translate(50px, -18px)"};
     }
     &:nth-child(4) {
       transform: ${({ open }) => open && "translate(50px, 20px)"};
@@ -72,12 +72,11 @@ export const SocialMenu = styled.div`
   width: 50px;
   border-radius: 50%;
   background-color: white;
-  box-shadow: 0 2px 6px #e3e3e3;
+  box-shadow: 0 2px 6px rgba(10, 10, 10, 0.24);
   font-size: 1.5em;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all cubic-bezier(0.4, 0, 0.2, 1) 500ms;
 
   svg {
     width: 24px !important;
