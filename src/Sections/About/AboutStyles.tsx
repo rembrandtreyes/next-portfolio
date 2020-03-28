@@ -5,6 +5,10 @@ export const AboutWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 320px) {
+    height: fit-content;
+  }
 `
 
 export const ContentWrapper = styled.div`
