@@ -50,11 +50,12 @@ export const NavBurgerMenu = styled.div`
 
 export const OffCanvasMenu = styled.div`
   display: block;
+  border: 1px solid #e3e3e3;
   transition: right 250ms ease-out;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 60px);
   width: 100vw;
   position: fixed;
-  top: 100px;
+  top: 60px;
   right: ${({ open }) => (open ? "0px" : "-100vw")};
   background-color: rgba(255, 255, 255, 0.97);
   z-index: 2;
