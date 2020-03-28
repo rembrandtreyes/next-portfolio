@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const HeroWrapper = styled.div`
-  height: calc(100vh - 100px);
+  height: calc(100vh - 60px);
   display: flex;
   flex-direction: column;
   justify-content: center;
