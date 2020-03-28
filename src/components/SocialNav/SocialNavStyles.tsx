@@ -9,9 +9,9 @@ export const SocialNavWrapper = styled.div`
 
   @media screen and (max-width: 600px) {
     bottom: 20px;
-    left: 4px;
+    left: 20px;
     transition: all cubic-bezier(0.4, 0, 0.2, 1) 500ms;
-    background-color: rgba(255, 255, 255, 0.97);
+    background-color: ${({ open }) => open && "rgba(255, 255, 255, 0.97)"};
     transform: ${({ open }) => open && "translate(-30%, 30%)"};
     border-radius: ${({ open }) => open && "50%"};
     width: ${({ open }) => (open ? "150px" : "50px")};
@@ -67,9 +67,12 @@ export const SocialLinks = styled.a`
 export const SocialMenu = styled.div`
   position: fixed;
   bottom: 20px;
-  left: 4px;
+  left: 20px;
   height: 50px;
   width: 50px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 2px 6px #e3e3e3;
   font-size: 1.5em;
   display: flex;
   justify-content: center;
