@@ -4,8 +4,8 @@ const About: React.FC = () => (
   <AboutWrapper id="about">
     <ContentWrapper>
       <h2>
-        <span role="img" aria-label="man-technologist">
-          👨‍💻
+        <span role="img" aria-label="nerd-face">
+          🤓
         </span>
         Who is he?
       </h2>
