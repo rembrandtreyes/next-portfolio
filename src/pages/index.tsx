@@ -7,7 +7,7 @@ import Contact from "Sections/Contact"
 const Index = () => (
   <>
     <Head>
-      <title key="index">Rembrandt Reyes | ReactJS Nerd | Rock Climber | Living in sunny San Francisco!</title>
+      <title key="home-page">Rembrandt Reyes | ReactJS Nerd | Rock Climber | Living in sunny San Francisco</title>
       <meta name="description" content="JavaScript enthusiast creating great things in React!" />
     </Head>
     <Hero />
