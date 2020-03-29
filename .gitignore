@@ -4,3 +4,4 @@ node_modules
 .npmrc
 .now
 .env
+.env.build

@@ -3,5 +3,12 @@
     "USER_ID": "@user-id",
     "TEMPLATE_ID": "@template-id",
     "SERVICE_ID": "@service-id"
+  },
+  "build": {
+    "env": {
+      "USER_ID": "@user-id",
+      "TEMPLATE_ID": "@template-id",
+      "SERVICE_ID": "@service-id"
+    }
   }
 }
