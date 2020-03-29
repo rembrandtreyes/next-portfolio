@@ -12,7 +12,7 @@ export const SocialNavWrapper = styled.div`
     left: 20px;
     transition: all cubic-bezier(0.4, 0, 0.2, 1) 500ms;
     background-color: ${({ open }) => open && "rgba(255, 255, 255, 0.97)"};
-    transform: ${({ open }) => open && "translate(-30%, 30%)"};
+    transform: ${({ open }) => open && "translate(-45px, 45px)"};
     border-radius: ${({ open }) => open && "50%"};
     width: ${({ open }) => (open ? "150px" : "50px")};
     height: ${({ open }) => (open ? "150px" : "50px")};
