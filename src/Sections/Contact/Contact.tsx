@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState } from "react"
 import emailjs from "emailjs-com"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -7,7 +8,7 @@ import useInput from "hooks/useInput"
 
 import { ContactWrapper, StyledForm } from "./ContactStyles"
 
-const Contact = () => {
+const Contact: React.FC = () => {
   const { value: name, bind: bindName, reset: resetName } = useInput("")
   const { value: email, bind: bindEmail, reset: resetEmail } = useInput("")
   const { value: message, bind: bindMessage, reset: resetMessage } = useInput("")
