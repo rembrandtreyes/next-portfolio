@@ -18,7 +18,7 @@ export const Navbar = styled.div`
   }
 `
 
-export const NavBurgerMenu = styled.div`
+export const NavBurgerMenu = styled.div<{ open: boolean }>`
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -48,7 +48,7 @@ export const NavBurgerMenu = styled.div`
   }
 `
 
-export const OffCanvasMenu = styled.div`
+export const OffCanvasMenu = styled.div<{ open: boolean }>`
   display: block;
   border: 1px solid #e3e3e3;
   transition: right 250ms ease-out;

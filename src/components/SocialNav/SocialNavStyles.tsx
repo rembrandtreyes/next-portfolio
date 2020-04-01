@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const SocialNavWrapper = styled.div`
+export const SocialNavWrapper = styled.div<{ open: boolean }>`
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -26,7 +26,7 @@ export const SocialNavWrapper = styled.div`
   }
 `
 
-export const SocialLinks = styled.a`
+export const SocialLinks = styled.a<{ open: boolean }>`
   display: flex;
   justify-content: center;
   align-items: center;
