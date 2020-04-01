@@ -37,7 +37,7 @@ const jobs = [
 
 const TABS = ["Hopjump", "Stop & Shop"]
 
-const Experience = () => {
+const Experience: React.FC = () => {
   const [activeTab, setActiveTab] = useState(0)
 
   return (

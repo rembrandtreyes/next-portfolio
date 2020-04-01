@@ -1,6 +1,6 @@
 import { HeroWrapper, TextWrapper, HeadingParagraph, StyledHeadingOne, StyledHeadingTwo } from "./HeroStyles"
 
-const Hero = () => (
+const Hero: React.FC = () => (
   <HeroWrapper>
     <TextWrapper>
       <HeadingParagraph>Hello, my name is</HeadingParagraph>
