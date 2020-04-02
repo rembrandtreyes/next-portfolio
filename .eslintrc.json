@@ -11,7 +11,9 @@
     "plugin:@typescript-eslint/recommended", // Uses the recommended rules from @typescript-eslint/eslint-plugin
     "plugin:prettier/recommended", // Enables eslint-plugin-prettier and displays prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
     "prettier", // disables react-specific linting rules that conflict with prettier
+    "prettier/flowtype",
     "prettier/react",
+    "prettier/standard",
     "prettier/@typescript-eslint"
   ],
   "globals": {
@@ -44,9 +46,9 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": ["react", "prettier"],
+  "plugins": ["prettier", "react-hooks", "@typescript-eslint", "babel"],
   "rules": {
-    "prettier/prettier": "error",
+    "prettier/prettier": ["error"],
     "max-len": ["error", 120, { "ignoreUrls": true, "ignoreStrings": true, "ignoreTemplateLiterals": true }],
     "quotes": ["error", "double", { "avoidEscape": true }],
     "semi": ["error", "never", { "beforeStatementContinuationChars": "always" }],
