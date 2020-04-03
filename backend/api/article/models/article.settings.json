@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "articles",
+  "info": {
+    "name": "article"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "default": "Add Your Title"
+    },
+    "Content": {
+      "type": "richtext",
+      "default": "Start your blogging",
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "published_at": {
+      "type": "date",
+      "required": true,
+      "default": "2020-04-02T19:00:00.000Z"
+    },
+    "category": {
+      "model": "category",
+      "via": "articles"
+    },
+    "keywords": {
+      "type": "json"
+    }
+  }
+}

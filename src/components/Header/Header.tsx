@@ -1,6 +1,6 @@
 import { useState } from "react"
-
 import Link from "next/link"
+
 import paths from "config/urls"
 
 import { Navbar, Container, LogoWrapper, LinkWrapper, StyledLink, NavBurgerMenu, OffCanvasMenu } from "./HeaderStyles"
@@ -31,6 +31,7 @@ const Header: React.FC = () => {
           <Link href="#contact">
             <StyledLink>Contact</StyledLink>
           </Link>
+          
         </LinkWrapper>
         {/* Mobile Menu */}
         <NavBurgerMenu open={isOpen} onClick={toggle}>
