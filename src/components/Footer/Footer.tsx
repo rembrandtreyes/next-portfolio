@@ -11,17 +11,13 @@ const Footer: React.FC = () => {
         &copy; {thisYear} Created by <a href={urls.portfolioRepo}>Rembrandt Reyes</a>
       </p>
       <p>
-        <span role="img" aria-label="love-you-gesture">
-          🤟
-        </span>{" "}
-        <a target="_blank" rel="noopener noreferrer" href={urls.kofi}>
-          ko-fi
-        </a>{" "}
-        <span role="img" aria-label="writing-hand">
-          ✍
-        </span>{" "}
-        <a target="_blank" rel="noopener noreferrer" href={urls.patreon}>
-          Patreon
+        <a href="https://ko-fi.com/S6S41KEHF" target="_blank" rel="noopener noreferrer">
+          <img
+            height="36"
+            style={{ border: "0px", height: "36px" }}
+            src="https://cdn.ko-fi.com/cdn/kofi2.png?v=2"
+            alt="Buy Me a Coffee at ko-fi.com"
+          />
         </a>
       </p>
     </FooterWrapper>
