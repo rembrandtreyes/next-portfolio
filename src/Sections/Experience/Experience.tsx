@@ -15,11 +15,13 @@ const jobs = [
     position: "UX/UI Engineer",
     dates: "January 2019 - Present",
     duties: [
-      "Design and code site pages, landing pages, emails, and components that are to be used for Hopjump",
-      "Helped solidify a brand direction for Hopjump to span across print, web, and social media",
-      "Communicate and collaborate with multi-disciplinary teams of engineers, designers, product managers, analysts and stakeholders on a daily basis",
-      "Worked closely with engineers and analysts to understand user experience on Hopjump to create user flows that lead to sales",
-      "Design and code email templates for first-party and third-party users",
+      "Design, code and QA site pages, landing pages, emails, and components that we use on a hotel booking website",
+      "Launching a new travel website that utilizes Next.JS and a headless CMS Strapi",
+      "Convert JavaScript files to TypeScript to utilize its powerful type system and to make files easier to read and debug",
+      "Worked closely with hotel analysts to understand user experience on our hotel booking site to design, code and A/B test better funnels for our user flows that lead to increased bookings.",
+      "Designed and created HTML & CSS email templates for first-party and third-party users",
+      "Refactored React code base from Class based components to Functional components to utilize React Hooks",
+      "Promoted from Junior Developer to UX/UI Engineer",
     ],
   },
   {
