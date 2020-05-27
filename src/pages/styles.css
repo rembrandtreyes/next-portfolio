@@ -1,15 +1,50 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,600|Roboto+Slab:300,400,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+
+:root {
+  --primary-color: #e0e5ec;
+  --secondary-color: #a3b1c6;
+  --light-color: #ffffff;
+  --medium-color: #c2cbd9;
+  --dark-color: #262626;
+}
+
 html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'Quicksand', sans-serif;
   margin: 0 auto;
   font-size: 16px;
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+}
+
+h1 {
+  margin: 0;
+  font-family: "Libre Baskerville", serif;
+  font-size: 6.854em;
+}
+
+h2 {
+  margin: 0;
+  font-family: "Libre Baskerville", serif;
+  font-size: 4.236em;
+}
+
+h3 {
+  margin: 0;
+  font-family: "Libre Baskerville", serif;
+  font-size: 2.618em;
+}
+
+h4 {
+  margin: 0;
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.618em;
 }
 
 p {
-  font-family: "Roboto Slab", serif;
+  margin: 0;
+  font-family: "Lato", sans-serif;
   font-size: 1em;
   font-weight: 300;
 }

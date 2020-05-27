@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import colors from "config/colors"
 
 export const Navbar = styled.div`
   position: sticky;
@@ -9,7 +10,7 @@ export const Navbar = styled.div`
   align-items: center;
   height: 100px;
   padding: 0 24px;
-  background-color: white;
+  background-color: ${colors.brandPrimary};
 
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
 
