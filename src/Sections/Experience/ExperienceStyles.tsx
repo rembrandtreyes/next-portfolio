@@ -1,48 +1,43 @@
 import styled from "styled-components"
+import breakpoints, { maxWidth } from "config/breakpoints"
 
 export const ExperienceWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  flex-direction: column;
-  transition: 250ms ease-in;
+  max-width: ${maxWidth.container};
+  min-height: 600px;
+  margin: 0 auto;
+  padding: 0 16px;
 
-  h2 {
+  h3 {
     display: flex;
-    font-size: 2.25em;
+    margin-bottom: 24px;
+    flex-direction: row;
+
+    @media (max-width: ${breakpoints.SMALL}) {
+      flex-direction: row-reverse;
+    }
 
     span {
-      margin-right: 16px;
+      margin: 0 16px 0 0;
+
+      @media (max-width: ${breakpoints.SMALL}) {
+        margin: 0 0 0 16px;
+      }
     }
   }
 
-  @media screen and (max-width: 600px) {
-    h2 {
-      font-size: 1.5em;
-    }
-  }
-
-  @media screen and (max-width: 320px) {
-    height: fit-content;
-    padding-top: 100px;
+  @media (min-width: ${breakpoints.MEDIUM}) {
+    padding: 0 24px;
   }
 `
 
 export const CompanyWrapper = styled.div`
+  min-width: 200px;
   display: flex;
-  flex-direction: row-reverse;
+  align-items: center;
 
-  @media screen and (max-width: 768px) {
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
-    padding: 0 16px;
-  }
-
-  @media screen and (max-width: 320px) {
-    padding: 0;
+  h4:nth-child(2) {
+    margin-left: 16px;
+    font-weight: 300;
   }
 `
 
