@@ -1,47 +1,51 @@
 import styled from "styled-components"
 
-import breakpoints from "config/breakpoints"
+import breakpoints, { maxWidth } from "config/breakpoints"
+import colors from "config/colors"
 
 export const HeroWrapper = styled.div`
-  height: calc(100vh - 60px);
+  margin: 64px auto 0;
+  padding: 0 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-`
-
-export const StyledHeadingOne = styled.h1`
-  font-size: 2.25em;
-  margin-bottom: 8px;
+  min-height: 600px;
 
   @media (min-width: ${breakpoints.MEDIUM}) {
-    font-size: 3.375em;
-  }
-
-  @media (min-width: ${breakpoints.LARGE}) {
-    font-size: 5.063em;
+    flex-direction: row;
+    max-width: ${maxWidth.container};
   }
 `
 
-export const StyledHeadingTwo = styled.h2`
-  margin: 0;
+export const SubheadingParagraph = styled.h1`
+  font-size: 1.618em;
   font-weight: 300;
-  font-size: 1em;
+  margin: 16px 0;
+`
 
-  @media (min-width: ${breakpoints.MEDIUM}) {
-    font-size: 1.5em;
-  }
+export const HeadingParagraph = styled.h2`
+  font-size: 2.618em;
+  font-weight: 700;
 
-  @media (min-width: ${breakpoints.LARGE}) {
-    font-size: 2.25em;
+  span {
+    color: ${colors.brandSecondary};
   }
 `
 
-export const HeadingParagraph = styled.p`
-  margin-bottom: 16px;
-  font-size: 1em;
+export const ImageWrapper = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
 
-  @media screen and (min-width: ${breakpoints.MEDIUM}) {
-    font-size: 1.5em;
+  img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 50%;
   }
+`
+
+export const TextWrapper = styled.div`
+  width: 50%;
 `
