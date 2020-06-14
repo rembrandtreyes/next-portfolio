@@ -8,7 +8,6 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <Header />
-      <SocialNav />
       <Component {...pageProps} />
       <Footer />
     </>
