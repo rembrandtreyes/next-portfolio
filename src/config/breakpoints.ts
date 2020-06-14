@@ -8,4 +8,8 @@ const breakpoints = {
   XXLARGE: "2560px",
 }
 
+export const maxWidth = {
+  container: "960px",
+}
+
 export default breakpoints
