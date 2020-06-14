@@ -1,18 +1,18 @@
-import { AboutWrapper, ContentWrapper, ImageWrapper } from "./AboutStyles"
+import { AboutWrapper, ContentWrapper } from "./AboutStyles"
 
 const About: React.FC = () => (
   <AboutWrapper id="about">
     <ContentWrapper>
       <h3>
         <span role="img" aria-label="nerd-face">
-          🤓
+          👋
         </span>
-        Little bit about me
+        Hi there, I&apos;m Rembrandt
       </h3>
       <p>
-        I am a front-end engineer creating websites to be responsive and pixel-perfect. My career has given me the
-        skills needed to design and develop digital masterpieces. I have been focused on what it means to give users the
-        experience they deserve when surfing the web.
+        A front-end engineer crafting websites to be responsive and pixel-perfect. My career has given me the skills to
+        design and develop digital masterpieces. I have been focused on what it means to give users the experience they
+        deserve when surfing the web.
       </p>
       <br />
       <p>
@@ -32,12 +32,6 @@ const About: React.FC = () => (
         <li>SwiftUI</li>
       </ul>
     </ContentWrapper>
-    <ImageWrapper>
-      <img
-        src="https://res.cloudinary.com/rreyes/image/upload/v1586232024/download_bueqvj.png"
-        alt="A profile of Rembrandt"
-      />
-    </ImageWrapper>
   </AboutWrapper>
 )
 
