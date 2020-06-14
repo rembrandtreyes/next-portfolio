@@ -1,9 +1,17 @@
 const colors = {
-  brandPrimary: "#e0e5ec",
-  brandSecondary: "#a3b1c6",
-  light: "#ffffff",
-  medium: "#c2cbd9",
+  brandPrimary: "#F2BE22",
+  brandSecondary: "#4A44F2",
+  accentPrimary: "#F20505",
+  accentSecondary: "#3726A6",
+  white: "#ffffff",
+  light: "#F2F2F2",
+  medium: "#BFBFBF",
   dark: "#262626",
+  twitter: "#1DA1F2",
+  instagram: "#E1306C",
+  appleRed: "#ff3a30",
+  appleGreen: "#28cd41",
+  appleYellow: "#ffcc00",
 }
 
 export const gradients = {
