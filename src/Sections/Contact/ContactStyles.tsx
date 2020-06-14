@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import colors from "config/colors"
 
-export const StyledForm = styled.form<{ open: boolean }>`
+export const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: center;

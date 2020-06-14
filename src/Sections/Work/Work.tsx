@@ -59,7 +59,7 @@ export const ProjectFlex = styled.div`
   width: 100%;
 `
 
-export const ImageContainer = styled.div`
+export const ImageContainer = styled.div<{ bgUrl: string }>`
   background-image: ${({ bgUrl }) => `url(${bgUrl})`};
   background-repeat: no-repeat;
   background-size: cover;
