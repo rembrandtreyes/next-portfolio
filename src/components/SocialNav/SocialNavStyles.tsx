@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import colors from "config/colors"
 
-export const SocialNavWrapper = styled.div<{ open: boolean }>`
+export const SocialNavWrapper = styled.div`
   display: flex;
   max-width: 250px;
   justify-content: space-between;
@@ -10,7 +10,7 @@ export const SocialNavWrapper = styled.div<{ open: boolean }>`
   }
 `
 
-export const SocialLinks = styled.a<{ open: boolean }>`
+export const SocialLinks = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
