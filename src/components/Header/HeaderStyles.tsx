@@ -54,20 +54,3 @@ export const StyledLink = styled.a`
   background-color: ${colors.brandSecondary};
   color: ${colors.white};
 `
-
-export const ResumeLink = styled.a`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 8px;
-
-  padding: 16px 24px;
-
-  border: 2px solid #222;
-  border-radius: 4px;
-  cursor: pointer;
-
-  @media screen and (min-width: 768px) {
-    padding: 8px 16px;
-  }
-`
