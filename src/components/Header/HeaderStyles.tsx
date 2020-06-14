@@ -9,7 +9,7 @@ export const Navbar = styled.div`
   border-bottom: 1px solid ${colors.medium};
   height: 80px;
   padding: 0 24px;
-  background-color: ${colors.light};
+  background-color: ${colors.white};
 `
 
 export const Container = styled.div`
@@ -52,7 +52,7 @@ export const StyledLink = styled.a`
   font-size: 18px;
   font-weight: 600;
   background-color: ${colors.brandSecondary};
-  color: ${colors.light};
+  color: ${colors.white};
 `
 
 export const ResumeLink = styled.a`
