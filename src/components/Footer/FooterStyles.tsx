@@ -1,15 +1,30 @@
 /* eslint-disable import/prefer-default-export */
 import styled from "styled-components"
-import { maxWidth } from "config/breakpoints"
+import breakpoints, { maxWidth } from "config/breakpoints"
 
 export const FooterWrapper = styled.div`
-  height: 100px;
+  margin: 0 16px;
+  padding-bottom: 16px;
+  @media (min-width: ${breakpoints.MEDIUM}) {
+    height: 75px;
+    padding: 0;
+  }
 `
 
 export const FooterContainer = styled.div`
-  max-width: ${maxWidth.container};
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+
+  div:first-child {
+    padding-bottom: 16px;
+  }
+
+  @media (min-width: ${breakpoints.MEDIUM}) {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: ${maxWidth.container};
+    align-items: flex-end;
+  }
 `
