@@ -19,7 +19,7 @@ const Contact: React.FC = () => {
 
     emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, e.target, process.env.USER_ID).then(
       result => result.text === "OK" && setNotification(`Thanks for saying hi ${name}, I'll be in touch!`),
-      error => error && setNotification("Yikes, looks like something went wrong. Try again in a bit.")
+      error => error && setNotification("Hmm, looks like something went wrong. Try again in a bit.")
     )
     resetName()
     resetEmail()
@@ -27,20 +27,17 @@ const Contact: React.FC = () => {
   }
   return (
     <ContactWrapper id="contact">
-      <h2>Want to say hi?</h2>
+      <h3>Want to say hi?</h3>
       <StyledForm onSubmit={sendEmail}>
         <input type="hidden" name="contact_number" />
         <label htmlFor="name">
-          <span>Your name</span>
-          <input type="text" name="user_name" {...bindName} />
+          <input type="text" name="user_name" {...bindName} placeholder="Your name" />
         </label>
         <label htmlFor="email">
-          <span>Your email</span>
-          <input type="email" name="user_email" {...bindEmail} />
+          <input type="email" name="user_email" {...bindEmail} placeholder="Your email" />
         </label>
         <label htmlFor="message">
-          <span>Message</span>
-          <textarea name="message" {...bindMessage} />
+          <textarea name="message" {...bindMessage} placeholder="Talk to me" />
         </label>
         <button type="submit">
           <FontAwesomeIcon icon={faPaperPlane} />

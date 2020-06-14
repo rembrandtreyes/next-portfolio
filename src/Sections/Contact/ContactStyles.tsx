@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import colors from "config/colors"
 
 export const StyledForm = styled.form<{ open: boolean }>`
   display: flex;
@@ -37,37 +38,58 @@ export const StyledForm = styled.form<{ open: boolean }>`
 
     input {
       height: 30px;
-      border: 1px solid #c3c3c3;
+      border: 2px solid ${colors.brandSecondary};
+      border-radius: 24px;
       font-size: 1em;
+      padding-left: 16px;
+
+      ::placeholder {
+        user-select: none;
+        color: ${colors.medium};
+        font-family: "Lato", sans-serif;
+      }
 
       &:focus {
         outline-offset: 0;
         outline: transparent;
-        border-bottom: 2px solid #222222;
       }
     }
 
     textarea {
-      border: 1px solid #c3c3c3;
+      border: 2px solid ${colors.brandSecondary};
       max-width: 300px;
-      height: 100px;
       font-size: 1em;
+      height: 30px;
+      padding: 8px 0 0 16px;
+      border-radius: 24px;
+      font-family: "Lato", sans-serif;
+      transition: height 250ms ease;
+
+      ::placeholder {
+        user-select: none;
+        color: ${colors.medium};
+        font-family: "Lato", sans-serif;
+      }
 
       &:focus {
         outline-offset: 0;
         outline: transparent;
-        border-bottom: 2px solid #222222;
+        height: 100px;
       }
+
+      resize: none;
     }
   }
 
   button {
-    border: 2px solid #222222;
+    border: 2px solid ${colors.brandSecondary};
     font-size: 1.5em;
     cursor: pointer;
-    border-radius: 4px;
-    padding: 8px 72px;
+    border-radius: 24px;
+    padding: 8px;
+    width: 100%;
     background-color: #ffffff;
+    color: ${colors.brandSecondary};
 
     @media screen and (max-width: 320px) {
       display: flex;
@@ -76,7 +98,7 @@ export const StyledForm = styled.form<{ open: boolean }>`
     }
 
     &:hover {
-      background-color: #222222;
+      background-color: ${colors.brandSecondary};
       color: #ffffff;
     }
 
