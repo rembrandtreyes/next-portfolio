@@ -1,5 +1,4 @@
 # Hello and welcome to Rembrandt's Portfolio!
-![home](https://res.cloudinary.com/rreyes/image/upload/v1585676025/home_zcs62u.png)
 # Get up and running
 1. Fork repo
 2. yarn install
