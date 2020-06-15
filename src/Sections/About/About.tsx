@@ -1,7 +1,7 @@
 import { AboutWrapper, ContentWrapper } from "./AboutStyles"
 
 const About: React.FC = () => (
-  <AboutWrapper id="about">
+  <AboutWrapper>
     <ContentWrapper>
       <h3>
         <span role="img" aria-label="nerd-face">
