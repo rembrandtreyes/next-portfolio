@@ -1,6 +1,6 @@
 import { useState, ReactElement } from "react"
 
-const useInput = initialValue=> {
+const useInput = initialValue => {
   const [value, setValue] = useState(initialValue)
 
   return {
