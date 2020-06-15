@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import colors from "config/colors"
 
-const Communication = () => (
+const Communication: React.FC = () => (
   <CommunicationWrapper>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44">
       <g id="Layer_2" data-name="Layer 2">

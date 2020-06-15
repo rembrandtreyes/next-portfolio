@@ -7,7 +7,7 @@ import Communication from "svg/Communication"
 
 import { SkillsWrapper, SkillContainer, SkillOverflowContainer, SkillCards, SkillArrow } from "./SkillsStyles"
 
-const Skills = () => {
+const Skills: React.FC = () => {
   return (
     <SkillsWrapper>
       <h4>Things I have picked up along the way...</h4>

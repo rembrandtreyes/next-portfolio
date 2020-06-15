@@ -1,9 +1,10 @@
+import { AppProps } from "next/app"
 import Footer from "components/Footer"
 import Header from "components/Header"
 
 import "./styles.css"
 
-export default function MyApp({ Component, pageProps }) {
+const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <>
       <Header />
@@ -12,3 +13,5 @@ export default function MyApp({ Component, pageProps }) {
     </>
   )
 }
+
+export default MyApp

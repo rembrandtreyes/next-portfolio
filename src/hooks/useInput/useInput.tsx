@@ -1,6 +1,10 @@
 import { useState } from "react"
 
-export const useInput = initialValue => {
+interface useInputProps {
+  initialValue: React.ReactNode
+}
+
+const useInput: React.FC<useInputProps> = initialValue => {
   const [value, setValue] = useState(initialValue)
 
   return {

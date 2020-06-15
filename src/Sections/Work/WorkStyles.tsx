@@ -1,6 +1,7 @@
 import styled from "styled-components"
-import colors from "config/colors"
+
 import breakpoints, { maxWidth } from "config/breakpoints"
+import colors from "config/colors"
 
 export const ProjectFlex = styled.div`
   display: flex;

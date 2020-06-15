@@ -6,7 +6,7 @@ import Contact from "Sections/Contact"
 import Work from "Sections/Work"
 import Skills from "Sections/Skills/Skills"
 
-const Index = () => (
+const Index: React.FC = () => (
   <>
     <Head>
       <title key="home-page">Rembrandt Reyes | ReactJS Nerd | Rock Climber | Living in sunny San Francisco</title>
