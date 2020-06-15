@@ -1,11 +1,9 @@
-import { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faTwitter, faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
-import { faUserAstronaut, faTimes } from "@fortawesome/free-solid-svg-icons"
 
 import urls from "config/urls"
 
-import { SocialNavWrapper, SocialLinks, SocialMenu } from "./SocialNavStyles"
+import { SocialNavWrapper, SocialLinks } from "./SocialNavStyles"
 
 const socials = [
   { name: "GitHub", icon: faGithub, link: urls.github },
@@ -14,28 +12,16 @@ const socials = [
   { name: "Instagram", icon: faInstagram, link: urls.instagram },
 ]
 
-const SocialNav = () => {
-  const [isOpen, setIsOpen] = useState(false)
-  const toggle = () => setIsOpen(prevIsOpen => !prevIsOpen)
-  return (
-    <>
-      <SocialNavWrapper open={isOpen}>
-        {socials.map(social => {
-          return (
-            <SocialLinks target="_blank" open={isOpen} key={social.name} href={social.link}>
-              <FontAwesomeIcon icon={social.icon} />
-            </SocialLinks>
-          )
-        })}
-      </SocialNavWrapper>
-      <SocialMenu onClick={toggle}>
-        <FontAwesomeIcon icon={isOpen ? faTimes : faUserAstronaut} />
-        <span />
-        <span />
-        <span />
-      </SocialMenu>
-    </>
-  )
-}
+const SocialNav: React.FC = () => (
+  <SocialNavWrapper>
+    {socials.map(({ name, link, icon }) => {
+      return (
+        <SocialLinks target="_blank" key={name} href={link}>
+          <FontAwesomeIcon icon={icon} />
+        </SocialLinks>
+      )
+    })}
+  </SocialNavWrapper>
+)
 
 export default SocialNav

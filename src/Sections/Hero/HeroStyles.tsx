@@ -1,72 +1,72 @@
 import styled from "styled-components"
 
+import breakpoints, { maxWidth } from "config/breakpoints"
+import colors from "config/colors"
+
 export const HeroWrapper = styled.div`
-  height: calc(100vh - 60px);
+  margin: 32px auto 0;
+  padding: 0 16px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-`
 
-export const StyledHeadingOne = styled.h1`
-  font-size: 5.063em;
-  margin: 0;
-
-  @media screen and (max-width: 768px) {
-    font-size: 3.375em;
-  }
-
-  @media screen and (max-width: 425px) {
-    font-size: 2.25em;
+  @media (min-width: ${breakpoints.MEDIUM}) {
+    min-height: 600px;
+    justify-content: center;
+    margin: 64px auto 0;
+    padding: 0 24px;
+    flex-direction: row;
+    max-width: ${maxWidth.container};
   }
 `
 
-export const StyledHeadingTwo = styled.h2`
-  font-size: 2.25em;
-  margin: 0;
-  font-family: "Roboto Slab", serif;
+export const HeadingParagraph = styled.h1`
+  font-size: 1.618em;
+  @media (min-width: ${breakpoints.MEDIUM}) {
+    font-size: 2.618em;
+  }
+  font-weight: 700;
+
+  span {
+    color: ${colors.brandSecondary};
+  }
+`
+
+export const SubheadingParagraph = styled.h2`
+  font-size: 1em;
+  @media (min-width: ${breakpoints.MEDIUM}) {
+    font-size: 1.618em;
+  }
   font-weight: 300;
-
-  @media screen and (max-width: 768px) {
-    font-size: 1.5em;
-  }
-
-  @media screen and (max-width: 425px) {
-    font-size: 1em;
-  }
+  margin: 16px 0;
 `
 
-export const HeadingParagraph = styled.p`
-  font-size: 1.5em;
-  margin: 0;
+export const ImageWrapper = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 32px;
 
-  @media screen and (max-width: 768px) {
-    font-size: 1.5em;
+  @media (min-width: ${breakpoints.MEDIUM}) {
+    margin-top: 0;
+    width: 50%;
   }
 
-  @media screen and (max-width: 425px) {
-    font-size: 1em;
+  img {
+    width: 200px;
+    height: 200px;
+    @media (min-width: ${breakpoints.MEDIUM}) {
+      height: 300px;
+      width: 300px;
+    }
+    object-fit: cover;
+    border-radius: 50%;
   }
-`
-
-export const SubHeadingParagraph = styled.p`
-  line-height: 1.5;
-  width: 410px;
-  margin-bottom: 48px;
-`
-
-export const StyledLink = styled.a`
-  padding: 16px 24px;
-  text-decoration: none;
-  color: #222222;
-  border: 2px solid #222222;
-  border-radius: 4px;
 `
 
 export const TextWrapper = styled.div`
-  max-width: 700px;
-
-  @media screen and (max-width: 600px) {
-    padding: 0 24px;
+  text-align: center;
+  @media (min-width: ${breakpoints.MEDIUM}) {
+    width: 50%;
+    text-align: left;
   }
 `

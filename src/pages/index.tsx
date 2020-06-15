@@ -3,8 +3,10 @@ import Hero from "Sections/Hero/Hero"
 import About from "Sections/About"
 import Experience from "Sections/Experience"
 import Contact from "Sections/Contact"
+import Work from "Sections/Work"
+import Skills from "Sections/Skills/Skills"
 
-const Index = () => (
+const Index: React.FC = () => (
   <>
     <Head>
       <title key="home-page">Rembrandt Reyes | ReactJS Nerd | Rock Climber | Living in sunny San Francisco</title>
@@ -12,6 +14,8 @@ const Index = () => (
     </Head>
     <Hero />
     <About />
+    <Skills />
+    <Work />
     <Experience />
     <Contact />
   </>

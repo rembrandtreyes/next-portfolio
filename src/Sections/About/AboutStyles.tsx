@@ -1,26 +1,36 @@
 import styled from "styled-components"
+import breakpoints, { maxWidth } from "config/breakpoints"
 
 export const AboutWrapper = styled.div`
-  height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  min-height: 800px;
+  padding: 0 16px;
+  margin: 100px auto;
 
-  @media screen and (max-width: 320px) {
-    height: fit-content;
+  @media (min-width: ${breakpoints.MEDIUM}) {
+    padding: 0 24px;
+    max-width: ${maxWidth.container};
   }
 `
 
 export const ContentWrapper = styled.div`
-  width: 500px;
-  margin-right: 60px;
-
-  h2 {
-    font-size: 2.25em;
+  h3 {
+    margin-bottom: 16px;
     display: flex;
 
+    @media (max-width: ${breakpoints.SMALL}) {
+      flex-direction: row-reverse;
+    }
+
     span {
-      margin-right: 16px;
+      @media (max-width: ${breakpoints.SMALL}) {
+        margin-left: 16px;
+      }
+      @media (min-width: ${breakpoints.SMALL}) {
+        margin-right: 16px;
+      }
     }
   }
 
@@ -30,11 +40,11 @@ export const ContentWrapper = styled.div`
 
   ul {
     display: grid;
-    grid-template-columns: repeat(2, minmax(200px, 250px));
-    overflow: hidden;
-    padding: 0px;
-    margin: 20px 0px 0px;
+    grid-template-columns: repeat(2, minmax(140px, 250px));
+    padding: 0;
+    margin: 8px 0px 0px;
     list-style: none;
+    overflow: hidden;
   }
 
   li {
@@ -45,32 +55,16 @@ export const ContentWrapper = styled.div`
     }
   }
 
-  @media screen and (max-width: 768px) {
-    margin-right: 0;
-  }
-
-  @media screen and (max-width: 600px) {
-    width: 100%;
-    margin: 0 16px;
-
-    h2 {
-      font-size: 1.5em;
-    }
+  @media (min-width: ${breakpoints.MEDIUM}) {
+    width: 505px;
+    margin: 0 auto;
 
     ul {
-      grid-template-columns: repeat(2, minmax(140px, 250px));
+      grid-template-columns: repeat(2, minmax(200px, 250px));
     }
   }
-`
 
-export const ImageWrapper = styled.div`
-  width: 500px;
-
-  img {
-    width: 100%;
-  }
-
-  @media screen and (max-width: 768px) {
-    display: none;
+  @media (min-width: ${breakpoints.XLARGE}) {
+    margin: 0;
   }
 `

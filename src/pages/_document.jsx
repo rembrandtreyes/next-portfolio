@@ -31,7 +31,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link href="/public/favicon.png" rel="stylesheet" />
+          <link rel="shortcut icon" type="image/icon" href="/favicon.ico" />
         </Head>
         <body>
           <Main />
