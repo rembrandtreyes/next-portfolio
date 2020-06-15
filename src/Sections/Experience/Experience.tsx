@@ -1,9 +1,4 @@
-import styled from "styled-components"
-
-import colors from "config/colors"
-
-import { ExperienceWrapper, CompanyWrapper } from "./ExperienceStyles"
-import breakpoints from "config/breakpoints"
+import { ExperienceWrapper, CompanyWrapper, JobsContainer, WorkWrapper, JobWrapper } from "./ExperienceStyles"
 
 const jobs = [
   {
@@ -48,29 +43,5 @@ const Experience: React.FC = () => {
     </ExperienceWrapper>
   )
 }
-
-export const JobsContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: ${breakpoints.MEDIUM}) {
-    flex-direction: row;
-  }
-  justify-content: space-between;
-`
-
-export const JobWrapper = styled.div`
-  p:nth-child(n + 2) {
-    margin: 8px 0;
-  }
-`
-
-export const WorkWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 24px 0;
-  max-width: 500px;
-  border-radius: 4px;
-`
 
 export default Experience

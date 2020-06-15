@@ -33,7 +33,14 @@ export const ExperienceWrapper = styled.div`
 export const CompanyWrapper = styled.div`
   min-width: 200px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 16px;
+
+  @media (min-width: ${breakpoints.MEDIUM}) {
+    justify-content: flex-start;
+    align-items: center;
+  }
 
   h4:nth-child(2) {
     margin-left: 16px;
@@ -130,4 +137,28 @@ export const StyledButton = styled.button<{ active: boolean }>`
   &:active {
     border-style: hidden;
   }
+`
+
+export const JobsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: ${breakpoints.MEDIUM}) {
+    flex-direction: row;
+  }
+  justify-content: space-between;
+`
+
+export const JobWrapper = styled.div`
+  p:nth-child(n + 2) {
+    margin: 8px 0;
+  }
+`
+
+export const WorkWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0;
+  max-width: 500px;
+  border-radius: 4px;
 `
