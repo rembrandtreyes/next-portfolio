@@ -29,8 +29,8 @@ const Code = () => (
 )
 
 export const CodeWrapper = styled.div`
-  width: 125px;
-  height: 125px;
+  width: 100px;
+  height: 100px;
   position: relative;
   margin: 24px auto;
 `

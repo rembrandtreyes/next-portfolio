@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import colors from "config/colors"
+import breakpoints from "config/breakpoints"
 
 export const StyledForm = styled.form`
   display: flex;
@@ -115,7 +116,12 @@ export const ContactWrapper = styled.div`
   height: fit-content;
   flex-direction: column;
 
-  h2 {
-    margin-bottom: 16px;
+  h3 {
+    font-size: 1.618em;
+    margin-bottom: 24px;
+
+    @media (min-width: ${breakpoints.MEDIUM}) {
+      font-size: 2.618em;
+    }
   }
 `

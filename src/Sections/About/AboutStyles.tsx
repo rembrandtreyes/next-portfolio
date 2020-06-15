@@ -7,7 +7,7 @@ export const AboutWrapper = styled.div`
   align-items: center;
   min-height: 800px;
   padding: 0 16px;
-  margin: 0 auto;
+  margin: 100px auto;
 
   @media (min-width: ${breakpoints.MEDIUM}) {
     padding: 0 24px;

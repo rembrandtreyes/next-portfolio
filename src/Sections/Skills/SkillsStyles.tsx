@@ -47,6 +47,10 @@ export const SkillCards = styled.div`
     font-size: 1.618em;
     margin-bottom: 16px;
   }
+
+  p {
+    line-height: 1.6;
+  }
 `
 
 export const SkillOverflowContainer = styled.div`

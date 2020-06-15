@@ -19,8 +19,8 @@ const Communication = () => (
 )
 
 export const CommunicationWrapper = styled.div`
-  width: 125px;
-  height: 125px;
+  width: 100px;
+  height: 100px;
   margin: 24px auto;
 `
 

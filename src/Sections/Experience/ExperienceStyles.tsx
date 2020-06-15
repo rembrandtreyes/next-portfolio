@@ -9,11 +9,17 @@ export const ExperienceWrapper = styled.div`
 
   h3 {
     display: flex;
-    margin-bottom: 24px;
     flex-direction: row;
+    font-size: 1.618em;
+
+    @media (min-width: ${breakpoints.MEDIUM}) {
+      font-size: 2.618em;
+      text-align: left;
+    }
 
     @media (max-width: ${breakpoints.SMALL}) {
       flex-direction: row-reverse;
+      justify-content: center;
     }
 
     span {
