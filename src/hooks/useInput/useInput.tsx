@@ -1,10 +1,6 @@
-import { useState } from "react"
+import { useState, ReactElement } from "react"
 
-interface useInputProps {
-  initialValue: React.ReactNode
-}
-
-const useInput: React.FC<useInputProps> = initialValue => {
+const useInput = initialValue=> {
   const [value, setValue] = useState(initialValue)
 
   return {
