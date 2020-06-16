@@ -30,8 +30,8 @@ export const SkillContainer = styled.div`
 `
 
 export const SkillCards = styled.div`
-  height: 400px;
-  padding: 24px;
+  height: 500px;
+  padding: 0 24px 48px;
   margin: 0 16px 0 0;
   border-radius: 4px;
   background-color: ${colors.white};
@@ -40,12 +40,14 @@ export const SkillCards = styled.div`
 
   @media (min-width: ${breakpoints.SMALL}) {
     min-width: 300px;
+    height: 400px;
   }
 
   h5 {
     font-family: "Lato", sans-serif;
     font-size: 1.618em;
     margin-bottom: 16px;
+    margin-top: 24px;
   }
 
   p {
