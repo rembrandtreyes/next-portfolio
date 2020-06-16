@@ -7,12 +7,12 @@ const About: React.FC = () => (
         <span role="img" aria-label="nerd-face">
           👋
         </span>
-        Hi there, I&apos;m Rembrandt
+        Hi, I&apos;m Rembrandt -
       </h3>
       <p>
-        A front-end engineer crafting websites to be responsive and pixel-perfect. My career has given me the skills to
-        design and develop digital masterpieces. I have been focused on what it means to give users the experience they
-        deserve when surfing the web.
+        I am a front-end engineer crafting websites to be responsive and pixel-perfect. My career has given me the
+        skills to design and develop digital masterpieces. I have been focused on what it means to give users the
+        experience they deserve when surfing the web.
       </p>
       <br />
       <p>

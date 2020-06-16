@@ -39,28 +39,18 @@ export const ExperienceWrapper = styled.div`
 export const CompanyWrapper = styled.div`
   min-width: 200px;
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
   margin-bottom: 16px;
+  flex-direction: column;
 
   @media (min-width: ${breakpoints.MEDIUM}) {
     justify-content: flex-start;
     align-items: center;
-  }
+    flex-direction: row;
 
-  h4:nth-child(2) {
-    margin-left: 16px;
-    font-weight: 300;
-  }
-`
-
-export const Company = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: fit-content;
-
-  @media screen and (max-width: 768px) {
-    display: block;
+    h4:nth-child(2) {
+      margin-left: 16px;
+    }
   }
 `
 
@@ -79,72 +69,6 @@ export const StyledLine = styled.span<{ activeTab: number }>`
   }
 `
 
-export const WorkContent = styled.div`
-  display: flex;
-  min-height: 600px;
-
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-  }
-
-  @media screen and (max-width: 425px) {
-    align-items: center;
-  }
-`
-
-export const JobDuties = styled.div`
-  width: 500px;
-  margin-left: 16px;
-
-  h4 {
-    margin-top: 16px;
-  }
-
-  ul {
-    list-style: none;
-    padding-inline-start: 24px;
-  }
-
-  li {
-    display: flex;
-    line-height: 1.5;
-    margin-bottom: 8px;
-
-    p {
-      margin: 0;
-    }
-
-    &:before {
-      content: "▷";
-      padding-top: 2px;
-      margin-right: 8px;
-    }
-  }
-
-  @media screen and (max-width: 600px) {
-    width: fit-content;
-    padding: 0 16px;
-    margin-left: 0;
-  }
-`
-
-export const StyledButton = styled.button<{ active: boolean }>`
-  background: transparent;
-  padding: 16px 0;
-  width: 150px;
-  border-style: hidden;
-  font-size: 16px;
-  opacity: ${({ active }) => (active ? "1" : "0.5")};
-  transition: all 250ms ease-in;
-  &:focus {
-    outline: none;
-  }
-
-  &:active {
-    border-style: hidden;
-  }
-`
-
 export const JobsContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -156,8 +80,13 @@ export const JobsContainer = styled.div`
 `
 
 export const JobWrapper = styled.div`
-  p:nth-child(n + 2) {
-    margin: 8px 0;
+  span {
+    display: inline-block;
+    margin: 2px 0;
+
+    @media (min-width: ${breakpoints.MEDIUM}) {
+      font-size: 18px;
+    }
   }
 `
 
@@ -167,4 +96,13 @@ export const WorkWrapper = styled.div`
   padding: 24px 0;
   max-width: 500px;
   border-radius: 4px;
+`
+
+export const Company = styled.h4`
+  font-weight: 700;
+`
+
+export const City = styled.h4`
+  font-weight: 300;
+  font-size: 1.318em;
 `

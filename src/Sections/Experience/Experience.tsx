@@ -1,17 +1,32 @@
-import { ExperienceWrapper, CompanyWrapper, JobsContainer, WorkWrapper, JobWrapper } from "./ExperienceStyles"
+import React from "react"
+import {
+  ExperienceWrapper,
+  CompanyWrapper,
+  JobsContainer,
+  WorkWrapper,
+  JobWrapper,
+  Company,
+  City,
+} from "./ExperienceStyles"
 
 const jobs = [
   {
     company: "Hopjump",
-    dates: "January 2019 - Present",
-    positions: ["UX/UI Engineer", "Junior Developer"],
-    city: "Boston",
+    city: "Boston, MA",
+    positions: [
+      { job: "UX/UI Engineer", date: "Jan 2020 - Present" },
+      { job: "Junior Developer", date: "Jan 2019 - Jan 2020" },
+    ],
   },
   {
     company: "SAS Retail Services",
-    dates: "October 2017 - January 2019",
-    positions: ["Lead Space Planning Analyst", "Space Planning Analyst", "Space Planning Support Analyst"],
-    city: "Boston",
+    city: "Boston, MA",
+    dates: "Oct 2017 - Jan 2019",
+    positions: [
+      { job: "Lead Analyst", date: "Feb 2018 - Jan 2019" },
+      { job: "Analyst II", date: "Dec 2017 - Feb 2018" },
+      { job: "Analyst I", date: "Oct 2017 - Dec 2017" },
+    ],
   },
 ]
 
@@ -22,19 +37,23 @@ const Experience: React.FC = () => {
         <span role="img" aria-label="man-technologist">
           👨‍💻
         </span>
-        Where I did my time
+        Work experience
       </h3>
       <JobsContainer>
         {jobs.map(({ company, dates, positions, city }) => (
           <WorkWrapper key={company}>
             <CompanyWrapper>
-              <h4>{company}</h4>
-              <h4>{city}</h4>
+              <Company>{company}</Company>
+              <City>{city}</City>
             </CompanyWrapper>
             <JobWrapper>
-              <p>{dates}</p>
-              {positions.map(position => (
-                <p key={position}>{position}</p>
+              {positions.map(({ job, date }) => (
+                <div key={job}>
+                  <span>
+                    <strong>{job}</strong>
+                  </span>{" "}
+                  | <span>{date}</span>
+                </div>
               ))}
             </JobWrapper>
           </WorkWrapper>

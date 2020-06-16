@@ -17,32 +17,36 @@ const Skills: React.FC = () => {
             <Code />
             <h5>Code</h5>
             <p>
-              I have been on a never ending journey learning the intricacies of each programming language I use on a
-              daily basis.
+              I have been on a journey through many lines of code learning HTML, CSS, and JavaScript. Recently I have
+              been using a lot of React in my web applications and really like the problems React solves, DOM
+              manipulation!
             </p>
           </SkillCards>
           <SkillCards>
             <Design />
             <h5>Design</h5>
             <p>
-              My admiration for design has greatly deepen. I am constantly learning new things that I can do with UX/UI
-              design.
+              Working as a UX/UI engineer has given me the opportunity do a lot of designing for our products and
+              implementing my designs is my favorite part! I use Photoshop, Illustrator, and Xd to build out my designs
+              before I turn them into reuseable components.
             </p>
           </SkillCards>
           <SkillCards>
             <Tools />
             <h5>Tools</h5>
             <p>
-              Just like Batman&apos;s belt, I have collected my fair share of tools that improve my productivity and
-              efficiency as a developer.
+              I have collected my fair share of tools that improve my productivity and efficiency as a developer to help
+              me fend off my greatest villain, Console Errors. I have gone spelunking through the depths of Chrome
+              Developer Tools and created ESLint and Prettier files to keep my code in check.
             </p>
           </SkillCards>
           <SkillCards>
             <Communication />
             <h5>Comms</h5>
             <p>
-              No hard skills here, but communication is still very important in my career. Stakeholder management, good
-              communication, teamwork and problem-solving all play a crucial role in my success as a developer.
+              I posses a strong commitment to team environments with the ability to contribute my expertise. I enjoy
+              working as a team member as well as independently. I have well developed skills in prioritizing, decision
+              making, time management, stake-holder management, and verbal/written communication
             </p>
           </SkillCards>
           <div style={{ minWidth: "1px" }} />
