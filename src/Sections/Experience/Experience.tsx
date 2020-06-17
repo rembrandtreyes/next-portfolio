@@ -21,7 +21,6 @@ const jobs = [
   {
     company: "SAS Retail Services",
     city: "Boston, MA",
-    dates: "Oct 2017 - Jan 2019",
     positions: [
       { job: "Lead Analyst", date: "Feb 2018 - Jan 2019" },
       { job: "Analyst II", date: "Dec 2017 - Feb 2018" },
@@ -40,7 +39,7 @@ const Experience: React.FC = () => {
         Work experience
       </h3>
       <JobsContainer>
-        {jobs.map(({ company, dates, positions, city }) => (
+        {jobs.map(({ company, positions, city }) => (
           <WorkWrapper key={company}>
             <CompanyWrapper>
               <Company>{company}</Company>
