@@ -2,13 +2,15 @@
   "env": {
     "USER_ID": "@user-id",
     "TEMPLATE_ID": "@template-id",
-    "SERVICE_ID": "@service-id"
+    "SERVICE_ID": "@service-id",
+    "GOOGLE_ANALYTICS": "@google-analytics"
   },
   "build": {
     "env": {
       "USER_ID": "@user-id",
       "TEMPLATE_ID": "@template-id",
-      "SERVICE_ID": "@service-id"
+      "SERVICE_ID": "@service-id",
+      "GOOGLE_ANALYTICS": "@google-analytics"
     }
   }
 }
