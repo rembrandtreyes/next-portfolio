@@ -20,7 +20,7 @@ const projects = [
     tech: ["Haml", "SCSS", "Ruby"],
   },
   {
-    link: "https://wwww.pokervault.com",
+    link: "https://apps.apple.com/us/app/pokervault/id1510490314",
     bgUrl: "https://res.cloudinary.com/rreyes/image/upload/v1592023039/pokervault-1_oxyc91.png",
     name: "PokerVault",
     tech: ["SwiftUI", "CoreData"],
