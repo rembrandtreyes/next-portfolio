@@ -9,7 +9,7 @@ declare global {
 }
 
 export default class Layout extends Component {
-  componentDidMount() {
+  componentDidMount(): void {
     if (!window.GA_INITIALIZED) {
       initGA()
       window.GA_INITIALIZED = true
@@ -17,7 +17,8 @@ export default class Layout extends Component {
     logPageView()
   }
 
-  render() {
-    return <div>{this.props.children}</div>
+  render(): JSX.Element {
+    const { children } = this.props
+    return <div>{children}</div>
   }
 }
