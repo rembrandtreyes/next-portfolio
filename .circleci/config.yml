@@ -4,7 +4,7 @@ orbs:
 jobs:
   lint:
     executor:
-      name: node/default
+      name: node/latest
     steps:
       - checkout
       - restore_cache:
