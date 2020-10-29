@@ -48,7 +48,6 @@
   },
   "plugins": ["prettier", "react-hooks", "@typescript-eslint", "babel"],
   "rules": {
-    "@typescript-eslint/no-use-before-define": ["error", { "functions": false }],
     "prettier/prettier": ["error"],
     "max-len": ["error", 120, { "ignoreUrls": true, "ignoreStrings": true, "ignoreTemplateLiterals": true }],
     "quotes": ["error", "double", { "avoidEscape": true }],
