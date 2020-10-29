@@ -48,6 +48,7 @@
   },
   "plugins": ["prettier", "react-hooks", "@typescript-eslint", "babel"],
   "rules": {
+    "@typescript-eslint/no-use-before-define": ["error", { "functions": false }],
     "prettier/prettier": ["error"],
     "max-len": ["error", 120, { "ignoreUrls": true, "ignoreStrings": true, "ignoreTemplateLiterals": true }],
     "quotes": ["error", "double", { "avoidEscape": true }],
@@ -68,6 +69,7 @@
         "depth": 3
       }
     ],
+    "no-use-before-define": ["error", { "variables": false }],
     "no-unused-vars": ["error", { "ignoreRestSiblings": true, "argsIgnorePattern": "^_" }],
     "react/jsx-filename-extension": ["error", { "extensions": [".jsx", ".tsx"] }],
     "react/jsx-one-expression-per-line": ["off"],
