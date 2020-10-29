@@ -15,7 +15,6 @@ jobs:
           name: Install Dependencies
           command: |
             yarn install --frozen-lockfile
-            yarn lint
       - save_cache:
           name: Save Yarn Package Cache
           key: yarn-packages-{{ checksum "yarn.lock" }}
